@@ -5,7 +5,7 @@ function DetailPage() {
     return (
         <div class="container">
             <div class="showcase">
-                <img src="./coverimage.jpg" class="hero-image img-fluid" alt="Responsive image" />
+                <img src="/coverimage.jpg" class="hero-image img-fluid" alt="Responsive image" />
             </div>
             <div class="titlecase">
                 <h1>Biriyani</h1>
