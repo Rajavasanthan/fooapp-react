@@ -1,13 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function FoodCard(props) {
     return (
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 foodlist">
+       
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 foodlist">
         <a href="./home.html" class="card-link">
             <div class="card">
+            <Link to={`/detail/${props.id}`}>
                 <img class="card-img-top"
                     src={props.imageUrl}
                     alt="Card image cap"/>
+                    </Link>
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
@@ -24,6 +28,7 @@ function FoodCard(props) {
             </div>
         </a>
     </div>
+        
     )
 }
 
