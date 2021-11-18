@@ -9,7 +9,7 @@ function HomePage() {
   const [isLoading,setLoading] = useState(true)
   useEffect(async () => {
     try {
-      let listData = await axios.get("http://localhost:3000/food")
+      let listData = await axios.get("https://foodappapidemo.herokuapp.com/food")
       setItemList(listData.data)
       setLoading(false)
     } catch (error) {

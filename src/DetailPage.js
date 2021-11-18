@@ -11,7 +11,7 @@ function DetailPage(props) {
 
     useEffect(async () => {
         try {
-          let listData = await axios.get(`http://localhost:3000/food/res/${params.id}`)
+          let listData = await axios.get(`https://foodappapidemo.herokuapp.com/food/res/${params.id}`)
           setDetail(listData.data)
           setLoading(false)
           //   setItemList(listData.data)
